@@ -1,0 +1,16 @@
+export ORACLE_HOME=$ORACLE_BASE/product/11.2.0/db_1
+export TNS_ADMIN=$ORACLE_HOME/network/admin
+export PATH=.:${PATH}:$HOME/bin:$ORACLE_HOME/bin
+export PATH=${PATH}:/usr/bin:/bin:/usr/bin/X11:/usr/local/bin
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:$ORACLE_HOME/lib
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:$ORACLE_HOME/oracm/lib
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/lib:/usr/lib:/usr/local/lib
+export CLASSPATH=${CLASSPATH}:$ORACLE_HOME/JRE
+export CLASSPATH=${CLASSPATH}:$ORACLE_HOME/JRE/lib
+export CLASSPATH=${CLASSPATH}:$ORACLE_HOME/jlib
+export CLASSPATH=${CLASSPATH}:$ORACLE_HOME/rdbms/jlib
+export CLASSPATH=${CLASSPATH}:$ORACLE_HOME/network/jlib
+export LIBPATH=${CLASSPATH}:$ORACLE_HOME/lib:$ORACLE_HOME/ctx/lib
+export ORACLE_OWNER=oracle
+export SPFILE_PATH=$ORACLE_HOME/dbs
+export ORA_NLS10=$ORACLE_HOME/nls/data
